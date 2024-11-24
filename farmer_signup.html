@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Farmer - Signup</title>
+        <style>
+
+            .cyaf{
+                height: 630px;
+                width: 900px;
+                overflow: hidden;
+            }
+
+            .img{
+                height: 630px;
+                width: 350px;
+            }
+            .h1{
+                position: absolute;
+                top: 0;
+                left: 530px;
+                font-size: 70px;
+            }
+
+            .cyaf form{
+                position: absolute;
+                left: 400px;
+                top: 180px;
+                margin: 20px;
+            }
+
+            label {
+                font-size: 30px;
+            }
+
+            input {
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                width: 200px;
+            }
+
+            .submit-btn {
+                margin-top: 13px;
+                margin-left: 300px;
+                padding: 10px 20px;
+                width: 200px;
+                font-size: 20px;
+                background-color: #6D6D03;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .submit-btn:hover {
+                background-color: #525202;
+            }
+
+            .f2{
+                width: 500px;
+                position: absolute;
+                left: 400px;
+                top: 0;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class = "cyaf">
+            <img src = "img/SignupFarmer.PNG" class = "img">
+            <h1 class = "h1">Create Your Account</h1>
+        
+            <form action="farmer_signin.php" method="post" class = "form" enctype="multipart/form-data">
+                <div class = f1>
+                    <label for = "name">Name  </label>
+                    <input type ="text" id ="name" name="name" required>
+                
+                    <br><br>
+                    <label for="email">E-mail  </label>
+                    <input type="email" id="email" name="email" required>
+                    
+                
+                    <br><br>
+                    <label for = "state">State  </label>
+                    <input type ="text" id ="state" name="state" required>
+                    
+                    
+                    <br><br>
+                    <label for = "country">Country  </label>
+                    <input type ="text" id ="country" name="country" required>
+                    
+                    
+                    <br><br>
+                    <label for="password">Password  </label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    
+                    <br><br>
+
+                    <label for="imageUpload">Image:</label>
+                    <input type="file" id="imageUpload" name="imageUpload" accept="image/*" required>
+                    <br><br>
+            </div>
+            <div class = "f2">
+                <label for="contactNo">Contact No.  </label>
+                <input type="tel" id="contactNo" name="contactNo" pattern="[0-9]{10}" required>
+
+                <br><br>
+                <label for = "city">City  </label>
+                <input type ="text" id ="city" name="city" required>
+
+                <br><br>
+                <label for = "district">District  </label>
+                <input type ="text" id ="district" name="district" required>
+
+                <br><br>
+                <label for = "regDate">Registration Date  </label>
+                <input type ="date" id ="regDate" name="regDate" required>
+
+                <br><br>
+                <label for="cpassword">Confirm Password  </label>
+                <input type="password" id="cpassword" name="cpassword" required password = cpassword>
+            </div>
+                <button type="submit" class="submit-btn">Create</button>
+            </form>
+        </div>
+
+        <script>
+            function validatePassword() {
+                var password = document.getElementById("password").value;
+                var cpassword = document.getElementById("cpassword").value;
+            
+                if (password != cpassword) {
+                    alert("Passwords do not match!");
+                    return false;
+                }
+                return true;
+            }
+            </script>
+    </body>
+</html>

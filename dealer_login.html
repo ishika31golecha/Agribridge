@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang = 'en'>
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - Dealer</title>
+
+        <style>
+
+            .image{
+                position: absolute;
+                width: 1350px;
+                height: 200px;
+                overflow: hidden;
+            }
+
+            .login h1{
+                position: absolute;
+                text-align: center;
+                top: 170px;
+                left: 590px;
+                font-size: 70px;
+            }
+
+            label {
+                font-size: 30px;
+            }
+
+            input {
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                width: 400px;
+            }
+
+            .submit-btn {
+                margin-top: 13px;
+                margin-left: 180px;
+                padding: 10px 20px;
+                width: 150px;
+                font-size: 20px;
+                background-color: #6D6D03;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .submit-btn:hover {
+                background-color: #525202;
+            }
+
+            .login1{
+                position: absolute;
+                top: 330px;
+                left: 420px;
+            }
+
+            .heading2{
+                position: absolute;
+                top: 540px;
+                left: 510px;
+                font-size: 25px;
+            }
+
+            .b{
+                position: absolute;
+                top: 600px;
+                left: 540px;
+                width: 280px;
+                height: 40px;
+                font-size: 20px;
+                background-color: #6D6D03;
+                color: white;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+            .b:hover{
+                background-color: #525202;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="login">
+            <img src = "img/farmer dealer.jfif" class = "image">
+            <h1>Login</h1>
+        </div>
+
+        <div class = "login1">
+            <form action="dealer_login.php" method="post">
+                <label for="email">E-mail  </label>
+                <input type="email" id="email" name="email">
+                <br><br>
+                <label for="password">Password  </label>
+                <input type="password" id="password" name="password">
+                <br><br>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+        </div>
+
+        <div class = "cuaF">
+            <h2 class = "heading2">New here! Create Your Account</h2>
+            <a href = "dealer_signup.html"><button class = "b">Create Your Account</button></a>
+        </div>
+    </body>
+
+</html>

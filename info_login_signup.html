@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AgriBridge - Connecting Farmers and Dealers</title>
+
+        <style>
+            .h1{
+                position: absolute;
+                width: 1330px;
+                height: 650px;
+                overflow: hidden;
+            }
+
+            .logo {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 200px;
+            }
+
+            .img1 {
+                position: absolute;
+                top: -100px;
+                right: -140px;
+                transform: rotate(45deg);
+                border-radius: 40px;
+                height: 600px;
+            }
+
+            .head1 {
+                position: absolute;
+                top: 150px;
+                left: 90px;
+                font-size: 75px;
+            }
+
+            .para1 {
+                position: absolute;
+                top: 450px;
+                left: 90px;
+                font-size: 35px;
+            }
+
+            .button1 {
+                position: absolute;
+                top: 550px;
+                left: 90px;
+                background-color: #6D6D03;
+                color: black;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+                font-size: 25px;
+            }
+
+            .button1:hover {
+                background-color: #252501;
+                color: rgb(253, 253, 253);
+            }
+
+            .aboutus {
+                position: absolute;
+                top: 650px;
+                width: 1330px;
+                height: 550px;
+                overflow: hidden;
+                background-color: #6D6D03;
+            }
+
+            .img2 {
+                position: absolute;
+                top: 60px;
+                left: 80px;
+                height: 450px;
+            }
+
+            .head2 {
+                position: absolute;
+                top: 30px;
+                right: 300px;
+                font-size: 60px;
+            }
+
+            .para2 {
+                text-align: center;
+                position: absolute;
+                top: 145px;
+                right: 75px;
+                font-size: 23px;
+            }
+
+            .para3 {
+                text-align: center;
+                position: absolute;
+                top: 290px;
+                right: 80px;
+                font-size: 23px;
+            }
+
+            .signup {
+                position: absolute;
+                top: 1200px;
+                width: 1330px;
+                height: 200px;
+            }
+
+            .head3 {
+                font-size: 45px;
+                position: absolute;
+                left: 490px;
+            }
+
+            .f {
+                position: absolute;
+                left: 450px;
+                top: 120px;
+            }
+
+            .d{
+                position: absolute;
+                right: 450px;
+                top: 120px;
+            }
+
+            .flogo{
+                height: 100px;
+                width: 100px;
+            }
+
+            .dlogo{
+                height: 100px;
+                width: 100px;
+            }   
+            
+            .dropdown-container {
+                display: flex;
+                flex-direction: column;
+                margin-top: 550px;
+                margin-left: 150px;
+            }
+
+            label {
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+
+            select {
+                width: 200px;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                appearance: none; 
+                background-color: #6D6D03;
+                background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="none" stroke="currentColor" d="M0 0l2 2 2-2"/></svg>');
+                background-repeat: no-repeat;
+                background-position: right 10px center;
+                background-size: 12px;
+            }
+
+            select:hover {
+                border-color: #888;
+            }
+
+            select:focus {
+                outline: none;
+                border-color: #007BFF;
+                box-shadow: 0 0 5px rgba(0,123,255,0.5);
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <div class = h1>
+            <img src = "img/agribridge.PNG" class = "logo">
+            <img src = "img/cp2.jpg" class = "img1">
+            <h1 class = head1>CONNECTING <br>FARMERS AND <br>DEALERS</h1>
+            <p class = para1>bridging farmers with the right resources</p>
+            <div class="dropdown-container">
+                <select id="loginDropdown" name="loginDropdown">
+                    <option value="" disabled selected>Login</option>
+                    <option value="farmer_login.html">Farmer</option>
+                    <option value="dealer_login.html">Dealer</option>
+                </select>
+            </div>
+        </div>
+
+        <div class = aboutus>
+            <img src = "img/cover2.0.PNG" class = "img2">
+            <h1 class = head2>About Us</h1>
+            <p class = para2>At AgriBridge, we are dedicated to building strong and lasting relationships <br>between farmers and dealers. Our platform is designed to streamline the <br>process of connecting agricultural producers with trusted suppliers, <br>ensuring that farmers get the best resources to maximize their yields, <br>while dealers can extend their reach to the farming community.</p>
+            <p class = para3>We believe in the power of collaboration to drive growth and success. <br>By bridging the gap between the field and the marketplace, <br>we create a space where both farmers and dealers thrive. <br>Our mission is to empower farmers with access to high-quality products <br>and services, while enabling dealers to offer their expertise and solutions <br>to those who need it most.</p>
+        </div>
+
+        <div class = signup>
+            <h1 class = head3>New here! Sign Up</h1>
+            <a href = "farmer_signup.html"> <button class = f><img src = "img/farmer logo.PNG" class = "flogo"></button></a>
+            <a href = "dealer_signup.html"> <button class = d><img src = "img/dealer logo.jpg" class = "dlogo"></button></a>
+        </div>
+
+        <script>
+            // Function to handle the redirect when an option is selected
+            document.getElementById("loginDropdown").addEventListener("change", function() {
+                var selectedValue = this.value;
+                if (selectedValue) {
+                    window.location.href = selectedValue; // Redirect to the selected page
+                }
+            });
+        </script>
+
+    </body>
+</html>
